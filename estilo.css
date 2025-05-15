@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #0ff;
+}
+.fundo-login {
+    background: url("avatar.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.login-box button {
+    background-color: #00ffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.topo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #0ff;
+}
+.menu-lateral {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px;
+}
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-lateral li {
+    margin: 10px 0;
+    color: #0ff;
+}
+.mensagem-topo {
+    text-align: center;
+    margin-top: 10px;
+}
+.painel-graficos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.grafico {
+    width: 460px;
+    height: 300px;
+    margin: 0 10px;
+    border: 1px solid #0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.painel-comando {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #0ff;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+}
