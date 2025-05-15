@@ -1,0 +1,1 @@
+// Gráfico espelhado será carregado aqui

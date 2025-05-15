@@ -1,0 +1,1 @@
+// Funções de CALL, PUT, histórico, banca, relógio
