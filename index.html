@@ -1,19 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>TX1 - Acesso</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <title>TX1 ULTRA</title>
+  <link rel="stylesheet" href="painel.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>TX1 - Acesso</h1>
-        <form action="painel.html">
-            <input type="text" placeholder="Email" required>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
+  <header>
+    <h2 id="guardiao-msg">Mensagem do Guardião</h2>
+  </header>
+
+  <div class="topo-info">
+    <div>Usuário: admin@tx1.com</div>
+    <div>Banca: R$ <span id="banca">100.00</span></div>
+    <div>Meta: R$ 40.00</div>
+    <div>Stop: R$ 30.00</div>
+    <div>Relógio: <span id="relogio">00:00:00</span></div>
+  </div>
+
+  <div class="graficos">
+    <div class="grafico">[ Gráfico Real com indicadores ]</div>
+    <div class="grafico">[ Espelho TX1 com leitura automática ]</div>
+  </div>
+
+  <div class="comandos">
+    <h3>SINAL ATUAL: <span id="sinal">CALL</span></h3>
+    <p>Critérios: RSI abaixo de 30, Engolfo de alta, MACD cruzado para cima</p>
+    <p>Confiabilidade: <strong><span id="score">93%</span></strong></p>
+    <button onclick="registrarEntrada('CALL')">CALL</button>
+    <button onclick="registrarEntrada('PUT')">PUT</button>
+    <button onclick="registrarEntrada('ESPERAR')">ESPERAR</button>
+    <button onclick="alternarModoFoco()">Modo Foco</button>
+  </div>
+
+  <div class="painel" id="resultado"></div>
+  <div class="painel" id="historico"></div>
+  <div class="painel" id="estatisticas"></div>
+  <div class="painel" id="refugio"></div>
+
+  <script src="painel_administrativo.js"></script>
 </body>
 </html>
